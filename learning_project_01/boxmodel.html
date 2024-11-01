@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Box Model</title>
+        <style>
+            .div1-box {
+                background-color:darkseagreen;
+                padding: 40px;
+                margin: 50px;
+                border: 2px solid black;
+                border-radius: 20px;
+                border-bottom-width: 20px;
+            }
+            .div2-box {
+                background-color: palevioletred;
+                /* margin-top: 20px;    Nothing will happen, because margins between consecutive elements can collapse into each other. So when we have 2 elements 'side by side' or 'one above each other', then both those margins collapse into each other and only the bigger of the margins is maintained! */
+                border: 5px solid darkslateblue;
+                height: 50px;
+                /* width constraints how much space the div can take up */
+                width: 120px;
+                padding: 20px;
+                margin: 20px auto 30px auto; /* margin left and right has been set to auto, means both of those are automatically adjusted to be equal, CENTERs DIV HORIZONTALLY! This doesn't works with top and bottom, it just works with left and right only! */
+            }
+        </style>
+    </head>
+    <div class="div1-box">First Div</div>
+    <div class="div2-box">Second Div</div>
+</html>

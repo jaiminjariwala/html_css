@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#navbar {
+    padding: 8px;
+    background-color: rgb(0, 0, 0);
+}
+
+#apple-logo {
+    height: 45px;
+}
+
+#about {
+    display: flex;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+#description {
+    width: 50%;     /* Occupy 50% of the area of parent div -> 'about' div*/
+    /* padding: 0 380px 0 80px; */
+    font-size: 25;
+    padding-right: 20px;
+    padding-top: 8px;
+}   
+
+#team {
+    width: 50%;
+}
+
+#team-image {
+    border-radius: 10px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+p {
+    margin: 0;
+}
+
+#jobs {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:0 8px;
+    font-size: 25;
+}
+
+.apply {
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+#footer {
+    background-color: ghostwhite;
+    text-align: center;
+    font-size: 25;
+}
+
+#footer-links {
+    list-style: none;   /* to remove the bullet points */
+    padding: 8px;
+    margin-top: 32px;
+}
+
+/* 
+Whenver we have 3 divs one above each other, and we want to show it inline... we can just use display: flex 
+*/
+
+/* 
+Difference between flex and inline is: Flex is applied to Parent and that applies all the items within it, whereas inline is something that we apply to child elements. 
+*/
+
+#footer-links li {  /* select li items under the id: footer-links */
+    display: inline;
+    margin: 0 16px;
+}
+
+.copyright {
+    color: gray;
+    margin-top: -20;
+}
+
+/* Different types of Selectors: */
+/* 1. Select by tag name */
+/* h1 is a selector, Property : Property Value */
+h1, h2 {
+    text-align: center;
+    font-size: 45;
+}
+
+h3 {
+    margin-bottom: -5;
+    margin-top: -5;
+}
+/* 2. Select by id */
+#banner {
+    width: 100%;    /* Occupy the entire space available, horizontally */
+    object-fit: cover;
+}
+
+/* 3. Select by class */
+.location {
+    color: gray;
+    margin-bottom: 15px;
+}
