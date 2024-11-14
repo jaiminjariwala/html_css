@@ -2,6 +2,11 @@
     <head>
         <title>Learning Web Dev</title>
         <link rel="stylesheet" href="style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:ital,wght@0,100..900;1,100..900&family=Anek+Latin:wght@100..800&family=Hedvig+Letters+Sans&family=Hedvig+Letters+Serif:opsz@12..24&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono:wght@100..800&family=Mukta:wght@200;300;400;500;600;700;800&family=Noto+Sans+Mono:wght@100&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=PT+Mono&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+
     </head>
     <body>
         <div id="navbar">
@@ -39,32 +44,39 @@
         <div id="jobs">
             <table id="jobs-table">
                 <tr class="jobs-header-row">    <!-- Table Header: Table Row 1 -->
-                    <th>Job Title</th>  <!-- Table Header -->
-                    <th>Location</th>
-                    <th>Salary</th>
-                    <th>Posted On</th>
+                    <th rowspan="2">Job Title</th>  <!-- Table Header -->
+                    <th colspan="2">Location</th>
+                    <th rowspan="2">Salary</th>
+                    <th rowspan="2">Posted On</th>
+                </tr>
+                <tr class="jobs-header-row">
+                    <th>City</th>
+                    <th>Country</th>
                 </tr>
                 <tr class="jobs-data-row">    <!-- Table Row 2 -->
                     <td>Frontend Developer</td>   <!-- Table Data -->
-                    <td>Bengaluru, India</td>
+                    <td>Bengaluru</td>
+                    <td>India</td>
                     <td>₹ 12,00,000</td>
                     <td>March 3, 2023</td>
                 </tr>
                 <tr class="jobs-data-row">    <!-- Table Row 3 -->
                     <td>Full Stack Developer</td>
-                    <td>New Delhi, India</td>
+                    <td>New Delhi</td>
+                    <td>India</td>
                     <td>₹ 15,00,000</td>
                     <td>February 1, 2023</td>
                 </tr>
                 <tr class="jobs-data-row">
                     <td>Data Scientist</td>
-                    <td>San Francisco, USA</td>
+                    <td>San Francisco</td>
+                    <td>USA</td>
                     <td>$ 175,000</td>
                     <td>December 22, 2022</td>
                 </tr>
                 <tr class="jobs-data-row">
                     <td>Machine Learning Engineer</td>
-                    <td>Remote</td>
+                    <td colspan="2">Remote</td>
                     <td>$ 80,000</td>
                     <td>September 19, 2022</td>
                 </tr>
@@ -118,6 +130,64 @@
             </table>
         </div>
         
+        <div id="application">
+            <h2>Submit your application</h2>
+
+            <form id="application-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="Full Name" required placeholder="Mark Clinton">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address</label><br>
+                    <input type="email" id="email" name="Email Address" required placeholder="markclinton@gmail.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label><br>
+                    <input type="tel" id="phone" name="phone" required placeholder="+91-9927878743">
+                </div>
+
+                <div class="form-group">
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position Applied For</label><br>
+                    <select name="Position Applied" id="position" required>
+                        <option value="">Select Position</option>
+                        <option value="frontend">Frontend Developer</option>
+                        <option value="full stack developer">Full Stack Developer</option>
+                        <option value="data scientist">Data Scientist</option>
+                        <option value="ml engineer">ML Engineer</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="resume">Upload Resume</label><br>
+                    <input type="file" id="resume" name="Resume" accept=".pdf, .doc, .docx" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="coverletter">Cover Letter</label><br>
+                    <textarea name="coverletter" id="coverletter" rows="5" placeholder="Explain what makes you suitable for this job..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
 
         <div id="footer">
             <ul id="footer-links">
