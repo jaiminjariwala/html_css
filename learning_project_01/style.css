@@ -136,14 +136,9 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
 .jobs-header-row th {
     border: 1px solid gray;
     padding: 8px;   /* Inside the border of a cell, added some padding! */
-<<<<<<< HEAD
-    /* If margin, space is added outside the border and If padding, space is added inside the border, according to the CSS box model! */
-    background-color:rgb(205, 205, 205);
-=======
     /* If margin: Space is added outside the border and... 
     If padding: Space is added inside the border, according to the CSS box model! */
     background-color: #FDA4AF;
->>>>>>> 118f470d8e0a566fe78f818114b243842f92bb32
     text-align: left;
 }
 
@@ -154,11 +149,7 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
 
 /* Now we want to add background color for ALTERNATE ROWs... */
 #jobs-table tr:nth-child(odd) {
-<<<<<<< HEAD
-    background-color: rgb(234, 235, 235);
-=======
     background-color: #FFE4E6;
->>>>>>> 118f470d8e0a566fe78f818114b243842f92bb32
 }
 
 #time-table-div {
@@ -170,10 +161,6 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
     width: 100%;
     border: 1px solid gray;
     border-collapse: collapse;
-<<<<<<< HEAD
-    
-=======
->>>>>>> 118f470d8e0a566fe78f818114b243842f92bb32
 }
 
 .data th {
@@ -186,8 +173,6 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
     border: 1px solid gray;
     padding: 8px;
 }
-<<<<<<< HEAD
-=======
 
 #application {
     max-width: 1000px;
@@ -229,4 +214,3 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
 #coverletter {
     width: 60%;
 }
->>>>>>> 118f470d8e0a566fe78f818114b243842f92bb32
