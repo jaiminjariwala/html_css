@@ -1,7 +1,31 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Albert Sans", sans-serif;
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-weight: 600;
+}
+
+h3 {
+    margin-bottom: -5;
+    margin-top: -5;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.75rem; }
+h4 { font-size: 1.5rem; }
+h5 { font-size: 1.25rem; }
+h6 { font-size: 1rem; }
+
+#banner {
+    width: 100%;    /* Occupy the entire space available, horizontally */
+    object-fit: cover;
 }
 
 h1, h2 {
@@ -37,7 +61,7 @@ h3 {
 #description {
     width: 50%;     /* Occupy 50% of the area of parent div -> 'about' div*/
     /* padding: 0 380px 0 80px; */
-    font-size: 25;
+    font-size: 1.5rem;
     padding-right: 20px;
     padding-top: 8px;
 }   
@@ -94,11 +118,13 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
 #footer-links li {  /* select li items under the id: footer-links */
     display: inline;
     margin: 0 16px;
+    font-size: 1.2rem;
 }
 
 .copyright {
     color: gray;
     margin-top: -20;
+    font-size: 1rem;
 }
 
 #jobs-table {
@@ -110,8 +136,14 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
 .jobs-header-row th {
     border: 1px solid gray;
     padding: 8px;   /* Inside the border of a cell, added some padding! */
+<<<<<<< HEAD
     /* If margin, space is added outside the border and If padding, space is added inside the border, according to the CSS box model! */
     background-color:rgb(205, 205, 205);
+=======
+    /* If margin: Space is added outside the border and... 
+    If padding: Space is added inside the border, according to the CSS box model! */
+    background-color: #FDA4AF;
+>>>>>>> 118f470d8e0a566fe78f818114b243842f92bb32
     text-align: left;
 }
 
@@ -122,7 +154,11 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
 
 /* Now we want to add background color for ALTERNATE ROWs... */
 #jobs-table tr:nth-child(odd) {
+<<<<<<< HEAD
     background-color: rgb(234, 235, 235);
+=======
+    background-color: #FFE4E6;
+>>>>>>> 118f470d8e0a566fe78f818114b243842f92bb32
 }
 
 #time-table-div {
@@ -134,7 +170,10 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
     width: 100%;
     border: 1px solid gray;
     border-collapse: collapse;
+<<<<<<< HEAD
     
+=======
+>>>>>>> 118f470d8e0a566fe78f818114b243842f92bb32
 }
 
 .data th {
@@ -147,3 +186,47 @@ Difference between flex and inline is: Flex is applied to Parent and that applie
     border: 1px solid gray;
     padding: 8px;
 }
+<<<<<<< HEAD
+=======
+
+#application {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.form-group {
+    margin: 25px 0;
+}
+#application-form label {
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+
+#application-form input, select, textarea {
+    padding: 4px;
+    font-size: 1.25rem;
+    margin-top: 4px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.form-group input[type="checkbox"] {    /* select those input tags which has class input type=checkbox */
+    width: 18px;
+    height: 18px;
+}
+
+.form-group input[type="text"], input[type="email"] {
+    width: 40%;
+}
+
+.form-group input[type="submit"] {
+    background-color: #FDA4AF;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#coverletter {
+    width: 60%;
+}
+>>>>>>> 118f470d8e0a566fe78f818114b243842f92bb32
