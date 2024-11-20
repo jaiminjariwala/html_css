@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Any property value which is gonna reused often we can defined it like following... */
+:root {
+    --primary-color: #0033ff;
+}
+
+body {
+    background-color: #f2f2f2;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+}
+
+.navbar {
+    background-color: white;
+    padding: 1em;
+}
+
+.logo {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.logo span {
+    color: var(--primary-color);
+}
+
+nav {
+    display: none;
+}
+
+.container {
+    display: flex;
+    place-content: space-between;
+}
