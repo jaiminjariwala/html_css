@@ -1,15 +1,36 @@
-.box-tuto {
-    height: 400px;
-    width: 1200px;
-    background-color: rgb(49, 225, 166);
-    padding: 20px;
+.div1 {
+    background-color: #EBEAFF;
+    margin: 0 auto;
     border: 4px solid black;
 
     display: flex;
+    justify-content: center;
+    column-gap: 25px;
+    padding-bottom: 25px;
+
+    flex-wrap: wrap;
 }
 
 
-/* Tutorial-1 */
+/* <======================== Tutorial-1 ========================> */
+.box-tuto1, .box-tuto2, .box-tuto3, .box-tuto4 {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    margin-top: 25px;
+    display: flex;  /* Initially, Tutorial-1 text and div element in index.html file took entire block but after applying display:flex, div element came besides "Tutorial-1" text. */
+
+    flex-direction: column;
+}
+
+.text-div {
+    padding: 7px;
+    background-color: white;
+    text-align: center;
+    font-weight: 700;
+    font-size: large;
+}
+
 .boxes {
     height: 400px;
     width: 400px;
@@ -31,15 +52,15 @@
     */
     height: 100px;
     width: 100px;
-    background-color: purple;
-    border: 4px solid darksalmon;
+    background-color: #AE445A;
+    border: 4px solid #E8BCB9;
 }
 
 .box--3 {
     height: 100px;
     width: 100px;
-    background-color: purple;
-    border: 4px solid darksalmon;
+    background-color: #AE445A;
+    border: 4px solid #E8BCB9;
 
     /* For the flex item, aligning vertically, we have... */
     align-self: end;
@@ -48,12 +69,12 @@
     margin-left: auto;  /* This will create as much margin between itself and the next flex-item as possible! */
 }
 
-/* Tutorial-2 */
+
+/* <======================== Tutorial-2 ========================> */
 .boxes2 {
     height: 400px;
     width: 400px;
     background-color: black;
-    margin-left: 20px;
 
     /* By default, as we've used 'div', the boxes are block element. */
     display: flex;  /* Using, flex, we changed the default display value of div! */
@@ -69,17 +90,16 @@
 .box--4, .box--5, .box--6 {
     height: 100px;
     width: 100px;
-    background-color: purple;
-    border: 4px solid darksalmon;
+    background-color: #AE445A;
+    border: 4px solid #E8BCB9;
 }
 
 
-/* Tutorial-3 */
+/* <======================== Tutorial-3 ========================> */
 .boxes3 {
     height: 400px;
     width: 400px;
     background-color: black;
-    margin-left: 20px;
 
     display: flex;
     flex-wrap: wrap;
@@ -95,9 +115,82 @@
 .box--7, .box--8, .box--9, .box--10, .box--11 {
     height: 100px;
     width: 100px;
-    background-color: purple;
-    border: 4px solid darksalmon;
+    background-color: #AE445A;
+    border: 4px solid #E8BCB9;
 }
 /* 
     As we add more flex items, they cram into each other, though we have set the width and height to 100px of all the boxes. So, if we want to keep that 100px width and if we want to get the box to the new line, in case of no space, then... we have to write "flex-wrap: wrap" 
 */
+
+
+
+/* <======================== Tutorial-4 ========================> */
+.boxes4 {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    row-gap: 20px;
+}
+
+.text-div span {
+    font-weight: 400;
+}
+
+.text-div2 {
+    color: white;
+    margin-right: 10px;
+}
+
+.text-div3 {
+    background-color: black;
+    padding: 5px;
+    border-radius: 40px;
+    color: white;
+}
+
+.box--12, .box--13, .box--14, .box--15, .box--16, .box--17 {
+    height: 100px;
+    width: 100px;
+    background-color: #AE445A;
+    border: 4px solid #E8BCB9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box--13 {
+    background-color: #219B9D;
+    border: 4px solid #E8BCB9;
+}
+
+.box--14 {
+    background-color: #4B4376;
+    border: 4px solid #E8BCB9;
+}
+
+.box--15 {
+    background-color: #AE445A;
+    border: 4px solid #E8BCB9;
+
+    order: 2;
+}
+
+.box--16 {
+    background-color: #219B9D;
+    border: 4px solid #E8BCB9;
+
+    order: 3;
+}
+
+.box--17 {
+    background-color: #4B4376;
+    border: 4px solid #E8BCB9;
+
+    order: 1;
+}
