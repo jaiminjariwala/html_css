@@ -1,0 +1,103 @@
+.box-tuto {
+    height: 400px;
+    width: 1200px;
+    background-color: rgb(49, 225, 166);
+    padding: 20px;
+    border: 4px solid black;
+
+    display: flex;
+}
+
+
+/* Tutorial-1 */
+.boxes {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+
+    display: flex;
+
+    /* justify-content -> we have for positioning along the horizontal axis */
+    /* we've space-evenly, space-around, space-between, start, center, end */ 
+    justify-content: space-evenly; 
+
+    /* align-items -> to position along the vertical axis */
+    align-items: center;
+}
+
+.box--1, .box--2 {
+    /* 
+    Though we've set the height and width of box--1, box--2 and box--3 div element to 100px, still the other div will appear below it, because, by default the display property of 'div' element is 'block'. 
+    */
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    border: 4px solid darksalmon;
+}
+
+.box--3 {
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    border: 4px solid darksalmon;
+
+    /* For the flex item, aligning vertically, we have... */
+    align-self: end;
+
+    /* For the flex item, aligning horizontally, we have... */
+    margin-left: auto;  /* This will create as much margin between itself and the next flex-item as possible! */
+}
+
+/* Tutorial-2 */
+.boxes2 {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    margin-left: 20px;
+
+    /* By default, as we've used 'div', the boxes are block element. */
+    display: flex;  /* Using, flex, we changed the default display value of div! */
+
+    /* To again change the direction, from horizontal to vertical... */
+    flex-direction: column; /* default value is 'row'. */
+
+    /* Now to center it both horizontally and vertically again... */
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.box--4, .box--5, .box--6 {
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    border: 4px solid darksalmon;
+}
+
+
+/* Tutorial-3 */
+.boxes3 {
+    height: 400px;
+    width: 400px;
+    background-color: black;
+    margin-left: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+
+    /* To get some space between flex items (between 2 boxes)... */
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.box--7, .box--8, .box--9, .box--10, .box--11 {
+    height: 100px;
+    width: 100px;
+    background-color: purple;
+    border: 4px solid darksalmon;
+}
+/* 
+    As we add more flex items, they cram into each other, though we have set the width and height to 100px of all the boxes. So, if we want to keep that 100px width and if we want to get the box to the new line, in case of no space, then... we have to write "flex-wrap: wrap" 
+*/
