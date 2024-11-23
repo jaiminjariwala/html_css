@@ -1,0 +1,76 @@
+body {
+    display: inline-flex;   /* Treats its children just like the "display: flex" property, except it itself does not automatically grow. */
+}
+.outer-div{
+    background-color: white;
+    padding: 20px;
+    border: 8px dashed black;
+    display: flex;
+
+    column-gap: 20px;
+}
+
+.div-card {
+    border: 2px solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+.div-card-title{
+    text-align: center;
+    padding: 7px;
+    border-bottom: 2px solid black;
+}
+
+.boxes1, .boxes2 {
+    height: 400px;
+    width: 300px;
+    background-color: black;
+
+    /* Step-1: Create the grid! */
+    display: grid;
+    /* 
+        The 1st column should get a space of 2 fractions and 2nd column should get a space of 4 fractions (of the available Parent Element Space)! 
+    */
+    grid-template-columns: 2fr 4fr; /* 2nd column should take 2x space than the 1st */
+    grid-template-rows: 3fr 1fr;    /* The 1st row should be 3x bigger than the 2nd row! */
+}
+
+/* Step-2: Place the grid items somewhere in the grid! */
+.boxes1 .box--1, .boxes1 .box--2 {
+    background-color: #859F3D;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.boxes1 .box--2 {
+    background-color: #F6FCDF;
+}
+
+.text {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.boxes2 .box--1 {
+    background-color: #3B1E54;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    grid-column: 2 / 3; /* Keep box--1 into grid-column which starts with 2 and ends at 3 */
+}
+
+.boxes2 .box--2 {
+    background-color: #9B7EBD;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
