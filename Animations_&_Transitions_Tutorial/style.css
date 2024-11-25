@@ -43,7 +43,7 @@ body {
 
     /* INTRO Animation... */
     /* animation: fade-in 1s 1.5s backwards;   wait for 1.5 second(which is DELAY) and then do the animation */
-    animation: fade-in 1s ease-in;
+    animation: fade-in 1s ease-in-out;
     /* 
         What will backwards do?
         It will consider, the beginning property value (as defined in the first @keyframes at-rule) and is applied "before the animation is displayed", during the period defined by 'animation delay'.
