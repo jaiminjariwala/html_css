@@ -16,8 +16,10 @@
 
 8. `column-gap: 20px` and `row-gap: 10px` 👉 to provide a gap between 2 flex-items in a flex-container.
 
-## Output: <br>
-https://github.com/user-attachments/assets/3e1f0a78-ff70-480b-8d9a-d4a169e5da86
+## Flexbox Tutorial with `Custom Vertical Scrollbar`: <br>
+https://github.com/user-attachments/assets/9f1c9921-99df-4753-b375-36a790918bae
+
+
 
 
 
