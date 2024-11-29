@@ -1,0 +1,87 @@
+// 4 color variables!
+$color-1: #7e3f93;  // Desktop
+$color-2: #BC7FCD;  // Laptop
+$color-3: #FB9AD1;  // Tablet 
+$color-4: #FFCDEA;  // Mobile
+
+// 4 breakpoint variables
+$mobile: 348px;
+$tablet: 694px;
+$laptop: 992px;
+$desktop: 1200px;
+
+// remove defualt styles of the browser
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+    body {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #000000;
+    }
+}
+
+.container {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    // Default background color for screens above 1200px
+    background-color: #5c2b6d; 
+}
+
+.bold-text {
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+#size {
+    min-width: 0px;
+    background-color: #ffffff;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#status {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+.bold {
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+
+// media queries for responsive colors
+@media screen and (max-width: $desktop) {
+    .container {
+        background-color: $color-1; // Desktop (992px - 1200px)
+    }
+}
+
+@media screen and (max-width: $laptop) {
+    .container {
+        background-color: $color-2; // Laptop (768px - 992px)
+    }
+}
+
+@media screen and (max-width: $tablet) {
+    .container {
+        background-color: $color-3; // Tablet (576px - 768px)
+    }
+}
+
+@media screen and (max-width: $mobile) {
+    .container {
+        background-color: $color-4; // Mobile (< 576px)
+    }
+}
