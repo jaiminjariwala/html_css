@@ -9,6 +9,18 @@
 
     <title>Tailwind Portfolio</title>
     <link rel="stylesheet" href="src/output.css">
+    <style>
+        /* Custom Manual Padding */
+        .custom-button {
+            padding: 1.125rem;
+            background-color: black;
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body class="font-nunito h-screen">
     <!-- Intro Section -->
@@ -17,7 +29,7 @@
         <nav class="fixed top-0 w-full border-b-2 border-black">
             <div class="flex justify-between items-center">
                 <div class="flex items-center gap-7 uppercase font-bold">
-                    <img class="h-14 w-14" src="Images/Grid Creation and Logo Design.png" alt="Icon">
+                    <img class="hover:cursor-pointer h-14 w-14" src="Images/Grid Creation and Logo Design.png" alt="Icon">
                     <a href="#">Homepage</a>
                     <a href="#">About</a>
                     <a href="#">Services</a>
@@ -26,7 +38,7 @@
                 </div>
                 <div class="flex justify-center items-center gap-7 text-sm font-bold">
                     <button class="uppercase">Blogs</button>
-                    <button class="p-4 border-black border-b-4 bg-black text-white uppercase">My Holidays</button>
+                    <button class="custom-button">My Holidays</button>
                 </div>
             </div>
 
