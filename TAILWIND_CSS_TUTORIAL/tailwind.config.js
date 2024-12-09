@@ -7,11 +7,23 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "sm":"480px"
+        "sm": "480px"
+      },
+      spacing: {
+        15: "3.75rem" // Custom top value (15 * 0.25rem = 3.75rem)
       }
     },
     fontFamily: {
       nunito: ['Nunito', 'sans-serif']
+    },
+    borderWidth: {
+      DEFAULT: '1px',
+      '0': '0',
+      '2': '2px',
+      '3': '3px',
+      '4': '4px',
+      '6': '6px',
+      '8': '8px',
     }
   },
   plugins: [],
