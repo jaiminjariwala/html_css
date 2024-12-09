@@ -10,7 +10,7 @@ module.exports = {
         "sm": "480px"
       },
       spacing: {
-        15: "3.75rem" // Custom top value (15 * 0.25rem = 3.75rem)
+        15: "3.65rem" // Custom top value (15 * 0.24rem = 3.65rem)
       }
     },
     fontFamily: {
@@ -20,7 +20,7 @@ module.exports = {
       DEFAULT: '1px',
       '0': '0',
       '2': '2px',
-      '3': '3px',
+      '3': '2.5px',
       '4': '4px',
       '6': '6px',
       '8': '8px',
